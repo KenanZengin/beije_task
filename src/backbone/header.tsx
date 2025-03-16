@@ -80,8 +80,6 @@ const Header = () => {
   ]
 
   
-  // if (loading) return <p>Ürünler yükleniyor...</p>;
-  // if (error) return <p>Hata: {error}</p>;
 
   useEffect(() => {
     setUser(reduxUser);
