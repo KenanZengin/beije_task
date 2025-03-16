@@ -18,7 +18,7 @@ const Login = () => {
     <main className="auth-form">
       <div className="auth-form-wrapper">
         <div className="form-img">
-          <Image src={FormImage} alt="Form-image" fill sizes="50vw" objectFit="cover" />
+          <Image src={FormImage} alt="Form-image" fill sizes="50vw"  />
         </div>
         <div className="form-content">
           <div className="form-content-wrapper">

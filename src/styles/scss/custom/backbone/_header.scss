@@ -20,7 +20,7 @@
        display: flex;
        align-items: center;
        justify-content: center;
-        .main-logo{
+        .header-logo{
             width: 172px;
             max-width: 172px;
             height: 24px;
@@ -29,7 +29,7 @@
                 max-width: auto;
             }
         }
-        .user-menu{
+        .header-menu{
             display: flex;
             align-items: center;
             gap: 2rem;
@@ -46,13 +46,13 @@
                 }
             }
         }
-        .hamburder-menu{
+        .menu-toggle{
             display: none;
             @include BootstrapMaxWidthResponsive(md) {
                 display: block;
             }
         }
-        .menu-btn{
+        .dropdown-item{
             background-color: inherit;
             border: 0;
             height: 24px;

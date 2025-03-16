@@ -96,7 +96,7 @@ const Header = () => {
       <div className="container">
         <div className="header-wrapper">
           <div className="header-left">
-            <div className="main-logo">
+            <div className="header-logo">
             <Link href={"/"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ const Header = () => {
               </svg>
             </Link>
             </div>
-          <div className="user-menu">
+          <div className="header-menu">
             <p
               aria-owns={open ? 'mouse-over-popover' : undefined}
               aria-haspopup="true"
@@ -143,7 +143,7 @@ const Header = () => {
           </div>
           </div>
           <div className="header-right">
-            <div className="user-menu nav-links">
+            <div className="header-menu nav-links">
               <Badge  
                 anchorOrigin={{
                   vertical: 'top',
@@ -182,7 +182,7 @@ const Header = () => {
                   aria-haspopup="true"
                   aria-expanded={open ? 'true' : undefined}
                   onClick={handleClick}
-                  className="menu-btn"
+                  className="dropdown-item"
                 >
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +223,7 @@ const Header = () => {
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClickMobile}
-                className="menu-btn hamburder-menu"
+                className="dropdown-item menu-toggle"
               >
                 <MenuIcon />
               </button>
@@ -301,8 +301,8 @@ const Header = () => {
         }}
       >
         <div className="menu-wrapper">
-          <button className="menu-btn" onClick={handleLogout}>Çıkış yap</button>
-          <button className="menu-btn" onClick={() => {router.push("/packets");setAnchorElMenu(null)}}>Ürünler</button>
+          <button className="dropdown-item" onClick={handleLogout}>Çıkış yap</button>
+          <button className="dropdown-item" onClick={() => {router.push("/packets");setAnchorElMenu(null)}}>Ürünler</button>
         </div>
       </Menu>
       <Menu
@@ -325,14 +325,14 @@ const Header = () => {
         <div className="menu-wrapper-mobile">
           <button className="menu-close" onClick={handleCloseMobile}><CloseIcon /></button>
           {user 
-            ? <button className="menu-btn" onClick={handleLogout}>Çıkış yap</button>
-            : <button className="menu-btn" onClick={() => pushNewRout("/login")}>Giriş yap</button>
+            ? <button className="dropdown-item" onClick={handleLogout}>Çıkış yap</button>
+            : <button className="dropdown-item" onClick={() => pushNewRout("/login")}>Giriş yap</button>
           }
-          <button className="menu-btn" onClick={() => pushNewRout("/packets")}>Tüm Ürünler</button>
-          <button className="menu-btn" onClick={() => pushNewRout("/")}>Biz Kimiz?</button>
-          <button className="menu-btn" onClick={() => pushNewRout("/")}>Bağış Kültürü</button>
-          <button className="menu-btn" onClick={() => pushNewRout("/")}>Regl Testi!</button>
-          <button className="menu-btn" onClick={() => pushNewRout("/")}>Kendi Paketini Oluştur</button>
+          <button className="dropdown-item" onClick={() => pushNewRout("/packets")}>Tüm Ürünler</button>
+          <button className="dropdown-item" onClick={() => pushNewRout("/")}>Biz Kimiz?</button>
+          <button className="dropdown-item" onClick={() => pushNewRout("/")}>Bağış Kültürü</button>
+          <button className="dropdown-item" onClick={() => pushNewRout("/")}>Regl Testi!</button>
+          <button className="dropdown-item" onClick={() => pushNewRout("/")}>Kendi Paketini Oluştur</button>
         </div>
       </Menu>
     </header>

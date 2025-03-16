@@ -17,6 +17,9 @@
             @include BootstrapMaxWidthResponsive(md) {
                 display: none;
             }
+            img{
+                object-fit: cover;
+            }
         }
         .form-content, .form-content .form-content-wrapper{
             display: flex;
