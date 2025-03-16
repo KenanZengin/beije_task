@@ -1,0 +1,31 @@
+.menu-wrapper{
+    padding: .35rem 1rem 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    .menu-btn{
+        background-color: inherit;
+        border: 0;
+        height: 24px;
+    }
+}
+.menu-wrapper-mobile{
+    width: 100vw;
+    padding: .35rem 1rem 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+    .menu-btn{
+        background-color: inherit;
+        border: 0;
+        height: 24px;
+    }
+    .menu-close{
+        position: absolute;
+        background-color: inherit;
+        border: none;
+        top: 0px;
+        right: 20px;
+    }
+}

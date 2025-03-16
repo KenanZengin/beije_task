@@ -1,0 +1,17 @@
+.MuiPaper-root:has(.popover-cntnt) {
+    background-color: $background-color-light;
+    box-shadow: $shadow ,$shadow-2;
+    .popover-cntnt{
+        padding-bottom: 5rem;
+    }
+}
+.MuiAlert-root{
+    display: flex;
+    align-items: center;
+}
+.loading-mui{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,144 @@
+.auth-form{
+    background-color: $background-color-light;
+    &-wrapper{
+        width: 100%;
+        display: flex;
+        height: calc(100vh - 94px);
+        @include BootstrapMaxWidthResponsive(smd) {
+            height: auto;
+            padding: 2.5rem 0;
+        }
+        .form-img,.form-content{
+            flex: 1;
+        }
+        .form-img{
+            position: relative;
+            height: calc(100vh - 94px);
+            @include BootstrapMaxWidthResponsive(md) {
+                display: none;
+            }
+        }
+        .form-content, .form-content .form-content-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-content{
+            @include BootstrapMaxWidthResponsive(md) {
+                padding: 0 1rem;
+            }
+            @include BootstrapMaxWidthResponsive(md) {
+                padding: 0 .75rem;
+            }
+            &-wrapper{
+                width: 100%;
+                max-width: 432px;
+                gap: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            .form-title{
+                p{
+                    font-size: 2.5rem;
+                    cursor: $full-dark;
+                    font-weight: bold;
+                    margin-bottom: .5rem;
+                }
+                span{
+                    font-size: 1rem;
+                    color: rgba($full-dark,.9);
+                }
+                
+            }
+            .form-group{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    flex: 1;
+                    padding: 1rem;
+                    font-weight: bold;
+                }
+                .selected-form{
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+            hr{
+                width: 100%;
+                background-color: $primary-color-2;
+                height: 2px;
+            }
+            .login-opt{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                a{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .5rem;
+                    border: 1px solid $primary-color;
+                    color: $primary-color;
+                    padding: 8px 1.5rem;
+                    border-radius: 99px;
+                }
+            }
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .inpts{
+                    margin-bottom: 1rem;
+                    position: relative;
+                    .shw-pass{
+                        height: 24px;
+                        position: absolute;
+                        top: 18.5px;
+                        right: 12px;
+                    }
+                }
+                .forgot-pass{
+                    text-align: right;
+                    font-size: .75rem;
+                    color: $full-dark;
+                }
+            }
+            .send-frm{
+                background-color: $primary-color;
+                padding: .75rem 0;
+                width: 100%;
+                border: 0;
+                color: $full-white;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 99px;
+                margin-top: 1.5rem;
+                max-height: 45px;
+                height: 45px;
+                &:hover{
+                    opacity: .9;
+                }
+            }
+        }
+    }
+}
+
+.disabled-clr-dark{
+    color: rgba($full-dark,0.6);
+}
+.select-clr-dark{
+    color: $primary-color;
+}
+.inp-err-br{
+    border: 1.5px solid $error-color !important;
+}
+.inp-err-mess{
+    text-align: start;
+    padding-top: 8px;
+    color: $error-color;
+    font-size: .75rem;
+    line-height: .9375rem;
+}

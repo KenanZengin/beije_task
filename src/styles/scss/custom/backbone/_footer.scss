@@ -1,0 +1,173 @@
+.footer{
+    width: 100%;
+    background-color: $background-color-dark;
+    position: relative;
+    overflow: hidden;
+    &-wrapper{
+        padding: 5rem 0;
+    }
+    &-top{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+        @include BootstrapMaxWidthResponsive(md) {
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+        .member-mail{
+            flex-grow: 1; 
+            flex-shrink: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+            .member-txt,.mail-area{
+                color: rgba($full-white,0.7);
+            }
+            .member-txt{
+                p{
+                    font-weight: 600;
+                    font-size: 1rem;
+                    margin-bottom: 4px;
+                }
+                span{
+                    font-size: .875rem;
+                }
+            }
+            .mail-area{
+                p{
+                    margin-top: 1rem;
+                    font-size: .875rem;
+                }
+                form{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 1rem;
+                    @include BootstrapMaxWidthResponsive(xsm) {
+                       flex-direction: column;
+                    }
+                    .inpts{
+                        flex: 0.72;
+                        @include BootstrapMaxWidthResponsive(xsm) {
+                            flex: 1;
+                            width: 100%;
+                        }
+                    }
+                    button{
+                        background-color: $full-white;
+                        color: $full-dark;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: .75rem 1rem;
+                        border-radius: 99px;
+                        border: 0;
+                        @include BootstrapMaxWidthResponsive(xsm) {
+                           width: 100%;
+                         }
+                    }
+                  
+                    
+                }
+            }
+        }
+        .links{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1.5rem;
+            @include BootstrapMaxWidthResponsive(md) {
+                grid-template-columns: repeat(2,1fr);
+            }
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    li{
+                        a{
+                            color: $full-white;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-bottom{
+        margin-top: 2.5rem;
+        .rights{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba($full-white,0.12);
+            @include BootstrapMaxWidthResponsive(md) {
+                flex-wrap: wrap;
+            }
+            nav ul, .lang-opt{
+                display: flex;
+                align-items: center;
+                @include BootstrapMaxWidthResponsive(md) {
+                    flex-wrap: wrap;
+                }
+            }
+            nav ul{
+                gap: 1.5rem;
+            }
+            .lang-opt{
+                gap: 0.5rem;
+                span{
+                    display: block;
+                    width: 1px;
+                    height: 12px;
+                    background-color: $background-color-dark-2;
+                }
+            }
+        }
+        .disabled-clr-light,.select-clr-light{
+            font-size: .75rem;
+        }
+        .payments{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: .5rem;
+            @include BootstrapMaxWidthResponsive(md) {
+                margin-top: 1rem;
+            }
+        }
+    }
+    .svg-container {
+        width: 101%;
+        height: 32px;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="-280 0 2000 32"><path fill="%23262626" d="M-4.018 1.223C-67 1.223-280 16-280 16v16h2000V16c-72 0-167-7.892-198.82-7.892-37.37 0-55.83 5.154-93.15 6.16-84.6 2.28-127.04-12.166-212.03-13.045-102.23-1.057-154.9 13.19-257.21 13.045-67.947-.097-104.453-6.16-172.401-6.16s-105.151 8.707-172.402 6.16C560.19 12.23 537.161 4.183 483.99 1.223c-122.055-6.793-191.8 17.11-315.606 13.045C98.854 11.984 65.894 1.223-4.018 1.223"/></svg>');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center; 
+        position: absolute;
+        top: -32px;
+        z-index: 9999;
+        @include BootstrapMaxWidthResponsive(md) {
+            display: none;
+        }
+      }
+}
+
+.disabled-clr-light{
+    color: rgba($full-white,0.5);
+}
+.select-clr-light{
+    color: $full-white;
+}
+.MuiFormControl-root{
+    width: 100%;
+}

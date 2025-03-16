@@ -1,0 +1,51 @@
+.product-accordion,.product-accordion-header{
+    min-height: max-content !important;
+}
+
+.product-accordion-header,.product-accordion-header *{
+    margin: 0px !important;
+}
+.product-accordion{
+    box-shadow: none !important;
+    padding: 1rem 0;
+    margin: 0 !important;
+    border-radius: 16px;
+    &-header{
+        padding: 0 1rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .5rem;
+        
+        .option{
+            h3{
+                font-weight: bold;
+                font-size: 1.25rem;
+                color: $full-dark;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+        .MuiAccordionSummary-expandIconWrapper{
+            // width: 20px;
+            // height: 20px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            border-radius: 4px;
+        }
+    }
+}
+
+.css-1086bdv-MuiPaper-root-MuiAccordion-root::before{
+    content: none !important;
+}
+
+.MuiAccordionDetails-root{
+    padding: 0 !important;
+}
+.css-1aj41gs::before {
+    height: 0px !important;
+    content: none !important;
+}

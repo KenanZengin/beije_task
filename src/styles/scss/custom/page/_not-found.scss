@@ -1,0 +1,12 @@
+.not-found{
+    min-height: calc(100vh - 94px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    a{
+        text-decoration: underline;
+        font-size: 1.5rem;
+    }
+}

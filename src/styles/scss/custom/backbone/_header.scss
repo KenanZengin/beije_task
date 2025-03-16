@@ -1,0 +1,69 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 94px;
+    max-height: 94px;
+    z-index: 1002;
+    position: sticky;
+    top: 0;
+    background-color: $background-color-light;
+    box-shadow: $shadow;
+    &-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+    &-left,&-right .nav-links{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        .main-logo{
+            width: 172px;
+            max-width: 172px;
+            height: 24px;
+            @include BootstrapMaxWidthResponsive(md) {
+                width: auto;
+                max-width: auto;
+            }
+        }
+        .user-menu{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            @include BootstrapMaxWidthResponsive(md) {
+                display: none;
+            }
+            p{
+                color: $full-dark;
+                font-size: 1rem;
+                font-weight: 500;
+                white-space: nowrap;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .hamburder-menu{
+            display: none;
+            @include BootstrapMaxWidthResponsive(md) {
+                display: block;
+            }
+        }
+        .menu-btn{
+            background-color: inherit;
+            border: 0;
+            height: 24px;
+        }
+        
+    }
+    &-right .nav-links{
+        gap: 1rem;
+        a{
+            display: flex;
+        }
+    }
+   
+}

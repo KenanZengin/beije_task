@@ -1,0 +1,67 @@
+
+.main-page-list{
+    min-height: calc(100vh - 94px);
+
+}
+.main-list{
+    display: flex;
+    padding-top: 1rem;
+    gap: 3rem;
+    background-color: $background-color-light;
+}
+
+.products{
+    .title{
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+}
+.packets{
+    .title{
+        font-size: 1rem;
+    }
+}
+.list{
+    .title, .title a{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    .title{
+        color: $full-dark;
+        margin-bottom: 1.5rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .list-items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(172px, 6fr));
+        gap: 1.5rem;
+        .list-item{
+            padding-bottom: 1.5rem;
+            .list-img{
+                position: relative;
+                height: 135px;
+                width: 100%;
+                img{
+                    object-fit: cover;
+                }
+            }
+            .list-name, .list-name p{
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+            }
+            .list-name{
+                padding-top: 1rem;
+                justify-content: space-between;
+                p{
+                    justify-content: center;
+                    font-size: 1rem;
+                    color: $primary-color;
+                }
+            }
+        }
+        
+    }
+}

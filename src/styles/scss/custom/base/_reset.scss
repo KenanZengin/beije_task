@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: scroll ; 
+    scrollbar-width: auto ; 
+    -ms-overflow-style: auto ;
+ }
+
+ body::-webkit-scrollbar-thumb {
+    border-radius: 100vh;
+    border: 3px solid light-dark(#AAB8C8,#575C69);
+    background: light-dark(#AAB8C8,#575C69) ;
+ }
+
+ body::-webkit-scrollbar {
+    width: 8px;
+    @include BootstrapMaxWidthResponsive(xsm) {
+        width: 0px;
+    }
+ }
+
+ body::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: light-dark(#F1F5F6, #0f172a);
+ }
+
+
+img, picture, video, canvas {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+:focus {
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
