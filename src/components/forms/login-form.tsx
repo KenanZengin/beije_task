@@ -53,8 +53,8 @@ const LoginForm = () => {
         setLoading(true);
 
         const formValue = {
-            "email": "salar@beije.co",
-            "password": "beijeApp"
+            "email": values.email,
+            "password": values.password
         }
 
         try {

@@ -89,8 +89,7 @@ const Packets = () => {
             totalPrice: updatedCart.reduce((acc, item) => acc + item.price * item.count, 0)
         };
     
-        let url = subProduct._id === "70a1b2c3d4e5f6789ab1c2d3"? "321321" : "https://3a631b5b-9b1b-4b7f-b736-00d1ce4a1505.mock.pstmn.io/verify-packet-price"
-        axios.post(url, body)
+        axios.post("https://3a631b5b-9b1b-4b7f-b736-00d1ce4a1505.mock.pstmn.io/verify-packet-price", body)
             .then((response) => {
                 showSnackbar("Ürün sepete eklendi", "success");
             })
