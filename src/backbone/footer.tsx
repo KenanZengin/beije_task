@@ -44,24 +44,24 @@ const Footer = () => {
                                         sx={{
                                             "& .MuiOutlinedInput-root": {
                                                 "& .MuiInputBase-input": {
-                                                    color: "rgba(255, 255, 255, 0.698)", // Input içindeki yazı rengi
+                                                    color: "rgba(255, 255, 255, 0.698)", 
                                                 },
                                                 "& fieldset": {
-                                                    borderColor: "rgba(255, 255, 255, 0.23)", // Normal border rengi
+                                                    borderColor: "rgba(255, 255, 255, 0.23)", 
                                                 },
                                                 "& fieldset span": {
-                                                    color: "rgba(255, 255, 255, 0.23) !important", // Normal border rengi
+                                                    color: "rgba(255, 255, 255, 0.23) !important",
                                                 },
                                                 "&:hover fieldset": {
-                                                    borderColor: "rgba(255, 255, 255, 0.23)", // Hover durumunda border rengi
+                                                    borderColor: "rgba(255, 255, 255, 0.23)",
                                                 },
                                                 "&.Mui-focused fieldset": {
                                                     border: "1px solid rgba(255, 255, 255, 0.23)",
                                                 },
                                             },
                                             "& .MuiInputBase-input::placeholder": {
-                                              color: "rgba(255, 255, 255, 0.698)", // Placeholder rengi
-                                              opacity: 1, // Opaklık artırma (Bazı tarayıcılarda varsayılan olarak düşüktür)
+                                              color: "rgba(255, 255, 255, 0.698)", 
+                                              opacity: 1,
                                             },
                                             "& .MuiFormLabel-root":{
                                                 color:"rgba(255, 255, 255, 0.698)"

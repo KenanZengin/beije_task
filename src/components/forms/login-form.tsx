@@ -172,8 +172,8 @@ const LoginForm = () => {
                         },
                         },
                         "& .MuiInputBase-input::placeholder": {
-                            color: "#000" , // Placeholder rengi
-                            opacity: .5, // Opaklık artırma (Bazı tarayıcılarda varsayılan olarak düşüktür)
+                            color: "#000" , 
+                            opacity: .5, 
                         },
                         "& .MuiFormLabel-root":{
                             color: errors.password ? "#DB1F21" : "#000",

@@ -3,7 +3,11 @@ const nextConfig = {
     images: {
         domains: ["beije.co", "static.beije.co"],
     },
-    reactStrictMode:false
+    reactStrictMode:false,
+    compiler:{
+        removeConsole:false
+    }
+    
 };
 
 export default nextConfig;

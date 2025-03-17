@@ -19,7 +19,6 @@ const initialState: UserState = {
     user: getUserFromLocalStorage(),
 };
 
-// Redux Slice
 const userSlice = createSlice({
     name: "user",
     initialState,

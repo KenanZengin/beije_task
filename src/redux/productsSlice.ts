@@ -31,7 +31,6 @@ export const fetchProducts = createAsyncThunk("products/fetchProducts", async ()
     }
 });
 
-// Redux Slice
 const productsSlice = createSlice({
     name: "products",
     initialState,
